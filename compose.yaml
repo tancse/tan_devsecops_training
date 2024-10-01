@@ -1,0 +1,11 @@
+version: '3.9'
+services: 
+  tan-flaskapp: 
+    image: tan-flask:appv1 
+    build: 
+      context: .  # location of dockerfile 
+      dockerfile:  Dockerfile # name of dockerfile
+    container_name: tanapp1 
+    ports:
+    - 3030:5000  
+# above steps have merging of build and run 
